@@ -1,6 +1,6 @@
 {
   "name": "@lemuria/popup",
-  "version": "0.0.0-pre",
+  "version": "1.0.0",
   "description": "The Function To Open A Popup.",
   "main": "src/index.js",
   "module": "src/index.js",
