@@ -1,9 +1,5 @@
-/* alanode example/ */
 import popup from '../src'
 
-(async () => {
-  const res = await popup({
-    text: 'example',
-  })
-  console.log(res)
-})()
+const editor = popup('/admin/editor', 'Editor', 900, 650, {
+  menubar: 'yes',
+})

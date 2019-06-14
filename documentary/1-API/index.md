@@ -8,18 +8,21 @@ import popup from '@lemuria/popup'
 
 %~%
 
-```## popup
+```## popup => Window
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["url", "string"],
+  ["title", "string"],
+  ["width", "?number"],
+  ["height", "?number"],
+  ["features", "Object="],
 ]
 ```
 
-Call this function to get the result you want.
+Opens a popup in the middle of the screen, and returns the reference to the window.
 
-%TYPEDEF types/index.xml%
+<!-- %TYPEDEF types/index.xml% -->
 
 %EXAMPLE: example, ../src => @lemuria/popup%
-%FORK example%
+<!-- %FORK example% -->
 
 %~%
