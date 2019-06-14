@@ -1,31 +1,29 @@
-import { debuglog } from 'util'
-
-const LOG = debuglog('@lemuria/popup')
+/* eslint-env browser */
 
 /**
- * The Function To Open A Popup.
- * @param {_@lemuria/popup.Config} [config] Options for the program.
- * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
- * @param {string} config.text A text to return.
+ * Opens a popup in the middle of the screen.
+ * @param {string} url The URL to open.
+ * @param {string} title The window title.
+ * @param {number} [width] The width of the popup.
+ * @param {number} [height] The height of the popup.
  */
-export default async function popup(config = {}) {
-  const {
-    shouldRun = true,
-    text,
-  } = config
-  if (!shouldRun) return
-  LOG('@lemuria/popup called with %s', text)
-  return text
+export default function popup (url, title, width, height) {
+  const { top: {
+    outerHeight, screenY, outerWidth, screenX,
+  } } = window
+  const attrs = []
+  if (width) {
+    const x = outerWidth / 2 + screenX - (width / 2)
+    const w = `width=${width}`
+    const t = `left=${x}`
+    attrs.push(w, t)
+  }
+  if (height) {
+    const y = outerHeight / 2 + screenY - (height / 2)
+    const t = `top=${y-50}`
+    const h = `height=${height}`
+    attrs.push(t, h)
+  }
+  const w = window.open(url, title, attrs.join(','))
+  return w
 }
-
-/* documentary types/index.xml */
-/**
- * @suppress {nonStandardJsDocs}
- * @typedef {_@lemuria/popup.Config} Config Options for the program.
- */
-/**
- * @suppress {nonStandardJsDocs}
- * @typedef {Object} _@lemuria/popup.Config Options for the program.
- * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
- * @prop {string} text A text to return.
- */
