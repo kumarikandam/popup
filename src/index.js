@@ -8,7 +8,7 @@
  * @param {?number} [height] The height of the popup. Pass null to disable.
  * @param {!Object<string, string>} [features] Window features.
  */
-export default function popup (url, title, width, height, features = {}) {
+export default function Popup(url, title, width, height, features = {}) {
   const { top: {
     outerHeight, screenY, outerWidth, screenX,
   } } = window

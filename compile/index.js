@@ -13,4 +13,4 @@ function Popup(url, title, width, height, features) {
   return _Popup(url, title, width, height, features)
 }
 
-module.exports = Popup()
+module.exports = Popup
