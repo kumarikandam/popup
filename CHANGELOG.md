@@ -1,3 +1,9 @@
+## 13 September 2019
+
+### [1.1.0](https://github.com/artdecoweb/popup/compare/v1.0.0...v1.1.0)
+
+- [package] Compile into _RequireJS_.
+
 ## 15 June 2019
 
 ### [1.0.0](https://github.com/artdecoweb/popup/compare/v0.0.0-pre...v1.0.0)

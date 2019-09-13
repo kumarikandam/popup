@@ -23,10 +23,8 @@
   },
   "files": [
     "compile",
-    "src",
-    "types/externs.js"
+    "src"
   ],
-  "externs": "types/externs.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/artdecoweb/popup.git"
