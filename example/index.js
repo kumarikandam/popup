@@ -1,5 +1,5 @@
-import popup from '../src'
+import Popup from '../src'
 
-const editor = popup('/admin/editor', 'Editor', 900, 650, {
+const editor = Popup('/admin/editor', 'Editor', 900, 650, {
   menubar: 'yes',
 })

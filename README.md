@@ -27,6 +27,8 @@ The package is available by importing its default function:
 import Popup from '@lemuria/popup'
 ```
 
+The package publishes both `main` and `module` fields, where `main` exports a _CommonJS_ module (require), and `module` exports an _ES6_ module (import).
+
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/1.svg?sanitize=true">
 </a></p>
@@ -41,9 +43,9 @@ Opens a popup in the middle of the screen by setting width/left and height/top p
  - <kbd>features</kbd> <em><code>!Object&lt;string, string&gt;</code></em> (optional): Window features. When compiling with Closure Compiler, some properties might need to appear in quotes, e.g., `{ 'status': 'no' }` as there are no externs for them.
 
 ```js
-import popup from '@lemuria/popup'
+import Popup from '@lemuria/popup'
 
-const editor = popup('/admin/editor', 'Editor', 900, 650, {
+const editor = Popup('/admin/editor', 'Editor', 900, 650, {
   menubar: 'yes',
 })
 ```

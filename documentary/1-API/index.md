@@ -6,6 +6,8 @@ The package is available by importing its default function:
 import Popup from '@lemuria/popup'
 ```
 
+The package publishes both `main` and `module` fields, where `main` exports a _CommonJS_ module (require), and `module` exports an _ES6_ module (import).
+
 %~%
 
 <typedef name="Popup" noArgTypesInToc>types/api.xml</typedef>
