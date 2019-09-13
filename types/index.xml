@@ -1,5 +1,5 @@
-<types namespace="lemuriaPopup">
-  <type name="WindowFeatures" desc="Supported window features.">
+<!-- <types namespace="_lemuria">
+  <type name="PopupWindowFeatures" desc="Supported window features.">
     <prop boolean name="shouldRun" default="true">
       A boolean option.
     </prop>
@@ -7,4 +7,4 @@
       A text to return.
     </prop>
   </type>
-</types>
+</types> -->

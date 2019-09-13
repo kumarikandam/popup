@@ -12,31 +12,33 @@ yarn add @lemuria/popup
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
+- [`Popup(url, title, width=, height=, features=): Window`](#popupurl-stringtitle-stringwidth-numberheight-numberfeatures-objectstring-string-window)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/0.svg?sanitize=true">
+</a></p>
 
 ## API
 
 The package is available by importing its default function:
 
 ```js
-import popup from '@lemuria/popup'
+import Popup from '@lemuria/popup'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/1.svg?sanitize=true">
+</a></p>
 
-```## popup => Window
-[
-  ["url", "string"],
-  ["title", "string"],
-  ["width", "?number"],
-  ["height", "?number"],
-  ["features", "Object="],
-]
-```
+## <code><ins>Popup</ins>(</code><sub><br/>&nbsp;&nbsp;`url: string,`<br/>&nbsp;&nbsp;`title: string,`<br/>&nbsp;&nbsp;`width=: ?number,`<br/>&nbsp;&nbsp;`height=: ?number,`<br/>&nbsp;&nbsp;`features=: !Object<string, string>,`<br/></sub><code>): <i>Window</i></code>
+Opens a popup in the middle of the screen by setting width/left and height/top properties according to the arguments. See https://developer.mozilla.org/en-US/docs/Web/API/Window/open for all features. Returns the reference to the window.
 
-Opens a popup in the middle of the screen, and returns the reference to the window.
+ - <kbd><strong>url*</strong></kbd> <em>`string`</em>: The URL to open.
+ - <kbd><strong>title*</strong></kbd> <em>`string`</em>: The window title.
+ - <kbd>width</kbd> <em>`?number`</em> (optional): The width of the popup. Enables horizontal centering.
+ - <kbd>height</kbd> <em>`?number`</em> (optional): The height of the popup. Enables vertical centering.
+ - <kbd>features</kbd> <em><code>!Object&lt;string, string&gt;</code></em> (optional): Window features. When compiling with Closure Compiler, some properties might need to appear in quotes, e.g., `{ 'status': 'no' }` as there are no externs for them.
 
 ```js
 import popup from '@lemuria/popup'
@@ -45,7 +47,9 @@ const editor = popup('/admin/editor', 'Editor', 900, 650, {
   menubar: 'yes',
 })
 ```
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/2.svg?sanitize=true">
+</a></p>
 
 ## Copyright
 
@@ -55,18 +59,21 @@ Window features are copyright of [MDN authors](https://developer.mozilla.org/en-
   <tr>
     <th>
       <a href="https://artd.eco">
-        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco" />
+        <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png"
+          alt="Art Deco">
       </a>
     </th>
     <th>© <a href="https://artd.eco">Art Deco</a>   2019</th>
     <th>
       <a href="https://www.technation.sucks" title="Tech Nation Visa">
-        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif"
-          alt="Tech Nation Visa" />
+        <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg"
+          alt="Tech Nation Visa">
       </a>
     </th>
     <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
   </tr>
 </table>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/-1.svg?sanitize=true">
+</a></p>

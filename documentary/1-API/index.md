@@ -3,12 +3,14 @@
 The package is available by importing its default function:
 
 ```js
-import popup from '@lemuria/popup'
+import Popup from '@lemuria/popup'
 ```
 
 %~%
 
-```## popup => Window
+<typedef name="Popup" noArgTypesInToc>types/api.xml</typedef>
+
+<!-- ```## popup => Window
 [
   ["url", "string"],
   ["title", "string"],
@@ -16,9 +18,9 @@ import popup from '@lemuria/popup'
   ["height", "?number"],
   ["features", "Object="],
 ]
-```
+``` -->
 
-Opens a popup in the middle of the screen, and returns the reference to the window.
+<!-- Opens a popup in the middle of the screen, and returns the reference to the window. -->
 
 <!-- %TYPEDEF types/index.xml% -->
 

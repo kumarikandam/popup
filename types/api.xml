@@ -1,0 +1,16 @@
+<types namespace="_lemuria">
+  <method name="Popup" return="Window">
+    <arg string name="url">The URL to open.</arg>
+    <arg string name="title">The window title.</arg>
+    <arg type="?number" name="width" opt>
+      The width of the popup. Enables horizontal centering.
+    </arg>
+    <arg type="?number" name="height" opt>
+      The height of the popup. Enables vertical centering.
+    </arg>
+    <arg type="!Object<string, string>" name="features" opt>
+      Window features. When compiling with Closure Compiler, some properties might need to appear in quotes, e.g., `{ 'status': 'no' }` as there are no externs for them.
+    </arg>
+    Opens a popup in the middle of the screen by setting width/left and height/top properties according to the arguments. See https://developer.mozilla.org/en-US/docs/Web/API/Window/open for all features. Returns the reference to the window.
+  </method>
+</types>
